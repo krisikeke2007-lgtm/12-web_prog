@@ -14,5 +14,5 @@ area.addEventListener('keyup', () => {
     // demo.textContent = star;
     demo.textContent = '*'.repeat(area.value.length);
 });
-
+ 
 
