@@ -12,17 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
             movieList.innerHTML = "";
 
             movies.forEach((movie, index) => {
-                // Oldalsáv feltöltése
+        
                 const li = document.createElement("li");
                 li.innerHTML = `<a href="#movie-${index}">${movie.title}</a>`;
                 movieList.appendChild(li);
 
-                // Kártya Létrehozása
                 const card = document.createElement("div");
                 card.className = "card";
                 card.id = `movie-${index}`;
                 
-                // Címkék kezelése (ha nincs adat, alapértelmezettet adunk)
                 const category = movie.category || "film";
                 const age = movie.ageLimit || "12";
 
